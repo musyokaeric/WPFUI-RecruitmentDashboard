@@ -4,9 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUIRecruitmentDashboard"
+        xmlns:uc="clr-namespace:WPFUIRecruitmentDashboard.UserControls"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="760" Width="1280" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Border CornerRadius="10" Background="#151f2d" MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Left Menu-->
+            <Border Grid.RowSpan="3" Background="#1e2e44" CornerRadius="10 0 0 10">
+                <Grid>
+                    <StackPanel VerticalAlignment="Top">
+                        <!--Ellipses-->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
+                            <Ellipse Width="8" Height="8" Fill="#eb1700"/>
+                            <Ellipse Width="8" Height="8" Fill="#ffaf01" Margin="7 0"/>
+                            <Ellipse Width="8" Height="8" Fill="#009d00"/>
+                        </StackPanel>
 
-    </Grid>
+                        <!--Menu Buttons-->
+                        <uc:Menubutton Icon="HomeVariant" IsActive="True"/>
+                        <uc:Menubutton Icon="Finance"/>
+                        <uc:Menubutton Icon="CommentMultipleOutline"/>
+                        <uc:Menubutton Icon="AccountSearchOutline"/>
+                        <uc:Menubutton Icon="BookSyncOutline"/>
+                        <uc:Menubutton Icon="AlertCircleCheckOutline"/>
+                        <uc:Menubutton Icon="CogOutline"/>
+                    </StackPanel>
+
+                    <uc:Menubutton Icon="Power" VerticalAlignment="Bottom" Margin="0 0 0 10"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
 </Window>

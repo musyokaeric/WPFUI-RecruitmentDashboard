@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cqeQdcLmuyCfGclEsJp/95n1mfveilgxR18vcwJOTSBWKi+TfQC9BCEExQ/7A15niLBQwpmPBD0hgMHlqtJHww==",
+  "dgSpecHash": "cphVc768F+6wuNpcYEIPu5F19uvNMDix+XMSIT3pcyJDRMkEhIDmgy5EmhvbercZp5cT02K3lldHYpz16vM2CA==",
   "success": true,
   "projectFilePath": "C:\\Users\\emusyoka001\\Documents\\GitHub\\WPFUI-RecruitmentDashboard\\WPFUIRecruitmentDashboard\\WPFUIRecruitmentDashboard.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\emusyoka001\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512"
+  ],
   "logs": []
 }
