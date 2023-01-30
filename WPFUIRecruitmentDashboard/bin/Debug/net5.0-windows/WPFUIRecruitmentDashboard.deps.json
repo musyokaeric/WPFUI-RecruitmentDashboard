@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPFUIRecruitmentDashboard/1.0.0": {
+        "runtime": {
+          "WPFUIRecruitmentDashboard.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPFUIRecruitmentDashboard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
