@@ -31,3 +31,5 @@ C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmen
 C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmentDashboard\obj\Debug\net5.0-windows\UserControls\InfoCard.baml
 C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmentDashboard\bin\Debug\net5.0-windows\LiveCharts.dll
 C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmentDashboard\bin\Debug\net5.0-windows\LiveCharts.Wpf.dll
+C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmentDashboard\obj\Debug\net5.0-windows\UserControls\Country.g.cs
+C:\Users\emusyoka001\Documents\GitHub\WPFUI-RecruitmentDashboard\WPFUIRecruitmentDashboard\obj\Debug\net5.0-windows\UserControls\Country.baml

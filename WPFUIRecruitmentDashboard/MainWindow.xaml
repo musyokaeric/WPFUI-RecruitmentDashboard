@@ -52,7 +52,7 @@
             </Border>
             
             <!--Top Menu-->
-            <Grid Grid.Column="1" Margin="25">
+            <Grid Grid.Column="1" Margin="40 25 25 25">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="auto"/>
@@ -155,6 +155,91 @@
                                 <lvc:StackedColumnSeries Fill="#101a28" MaxColumnWidth="15" Values="2,4,6,5,8,6,3,5,7"/>
                             </lvc:CartesianChart.Series>
                         </lvc:CartesianChart>
+                    </Grid>
+                </Border>
+            </Grid>
+            
+            <!--Middle Bottom Section-->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="450"/>
+                </Grid.ColumnDefinitions> 
+                
+                <!--Hire Section-->
+                <Border Margin="40 0 0 20" Style="{StaticResource mainBorder}">
+                    <Grid>
+                        <!--Title-->
+                        <TextBlock Text="Top Hiring Sources" Style="{StaticResource titleText}"/>
+
+                        <!--Filer Bitton-->
+                        <Button Style="{StaticResource titleButton}">
+                            <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
+                        </Button>
+
+                        <!--Legends-->
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 8 40 0">
+                            <Border Width="12" Height="12" Background="#7166f9" CornerRadius="3"/>
+                            <TextBlock Text="Marketing" VerticalAlignment="Center" Margin="7 0 15 0" Foreground="#d4d6d9"/>
+                        </StackPanel>
+
+                        <!--Hire Chart-->
+                        <lvc:CartesianChart LegendLocation="None" Margin="0 50 0 0">
+                            <lvc:CartesianChart.DataTooltip>
+                                <lvc:DefaultTooltip Background="#101a28" Foreground="#d5e2ff"/>
+                            </lvc:CartesianChart.DataTooltip>
+
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" Labels="Direct,,,,Indeed,,,,WeWork,,,,,,Referrals,,,,Hired,,,,Instagram,,,LinkedIn,Direct,,,,Indeed,,,,WeWork,,,,,,Referrals,,,,Hired,,,,Instagram,,,LinkedIn,Direct,,,,Indeed,,,,WeWork,,,,,,Referrals,,,,Hired,,,,Instagram,,,LinkedIn,Direct,,,,Indeed,,,,WeWork,,,,,,Referrals,,,,Hired,,,,Instagram,,,LinkedIn,,">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0" Step="4"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True" MinValue="0" MaxValue="100">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="1" Stroke="#2c3a54"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+
+                            <lvc:CartesianChart.Series>
+                                <lvc:LineSeries StrokeThickness="2" Stroke="#6860e6" PointGeometrySize="0"
+                                                Values="34,67,89,54,62,,89,45,76,93,45,77,12,75,87,45,66,45,78,34,65,89,66,33,87,58,55,60">
+                                    <lvc:LineSeries.Fill>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#2e3966" Offset="0.4"/>
+                                            <GradientStop Color="#21304a" Offset="1.2"/>
+                                        </LinearGradientBrush>
+                                    </lvc:LineSeries.Fill>
+                                </lvc:LineSeries>
+                            </lvc:CartesianChart.Series>
+                        </lvc:CartesianChart>
+                    </Grid>
+                </Border>
+                
+                <!--Country Section-->
+                <Border Grid.Column="1" Margin="20 0 35 20" Style="{StaticResource mainBorder}">
+                    <Grid>
+                        <!--Title-->
+                        <TextBlock Text="Top Countries" Style="{StaticResource titleText}"/>
+                        
+                        <!--Filer Button-->
+                        <Button Style="{StaticResource titleButton}" Margin="0 -3 0 0">
+                            <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource topMenuButtonIcon}"/>
+                        </Button>
+                        
+                        <!--Country List View-->
+                        <ListView Margin="0 40 0 0" Background="Transparent" BorderThickness="0" 
+                                  ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <uc:Country CountryName="Germany" Flag="/Images/de.png" Price="$27,965.39" IsLevelUp="True"/>
+                            <uc:Country CountryName="Russia" Flag="/Images/ru.png" Price="$19,584.23" IsLevelUp="True"/>
+                            <uc:Country CountryName="United States" Flag="/Images/us.png" Price="$18,650.69" IsLevelUp="True"/>
+                            <uc:Country CountryName="India" Flag="/Images/in.png" Price="$17,196.39" IsLevelUp="False"/>
+                            <uc:Country CountryName="Iran" Flag="/Images/ir.png" Price="$14,509.71" IsLevelUp="True"/>
+                        </ListView>
                     </Grid>
                 </Border>
             </Grid>
