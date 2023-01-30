@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cphVc768F+6wuNpcYEIPu5F19uvNMDix+XMSIT3pcyJDRMkEhIDmgy5EmhvbercZp5cT02K3lldHYpz16vM2CA==",
+  "dgSpecHash": "RaXlmUDcUhYZe1+ikzJ4WClcm2rKoZ9lkBsoYtWgx0geqJ89bKo8PlJPyErxRx/S2mJ+gmt+Xyfji8OV2Umikw==",
   "success": true,
   "projectFilePath": "C:\\Users\\emusyoka001\\Documents\\GitHub\\WPFUI-RecruitmentDashboard\\WPFUIRecruitmentDashboard\\WPFUIRecruitmentDashboard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emusyoka001\\.nuget\\packages\\livecharts.core\\0.9.8\\livecharts.core.0.9.8.nupkg.sha512",
+    "C:\\Users\\emusyoka001\\.nuget\\packages\\livecharts.wpf.core\\0.9.8\\livecharts.wpf.core.0.9.8.nupkg.sha512",
     "C:\\Users\\emusyoka001\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512"
   ],
   "logs": []

@@ -113,5 +113,32 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#eee" />
         </Style>
+        
+        <!--Main Border-->
+        <Style x:Key="mainBorder" TargetType="Border">
+            <Setter Property="Background" Value="#1e2e44"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        
+        <!--Title Text-->
+        <Style x:Key="titleText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#eee"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <!--Title Button-->
+        <Style x:Key="titleButton" TargetType="Button" BasedOn="{StaticResource topMenuButton}">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Width" Value="35"/>
+            <Setter Property="Height" Value="35"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2e3966"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>
