@@ -8,6 +8,11 @@
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="MainWindow" Height="760" Width="1280" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="Transparent">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis"/>
+    </Window.Resources>
+    
     <Border CornerRadius="10" Background="#151f2d" MouseDown="Border_MouseDown">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -25,7 +30,7 @@
                 <Grid>
                     <StackPanel VerticalAlignment="Top">
                         <!--Ellipses-->
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 45">
                             <Ellipse Width="8" Height="8" Fill="#eb1700"/>
                             <Ellipse Width="8" Height="8" Fill="#ffaf01" Margin="7 0"/>
                             <Ellipse Width="8" Height="8" Fill="#009d00"/>
@@ -44,6 +49,41 @@
                     <uc:Menubutton Icon="Power" VerticalAlignment="Bottom" Margin="0 0 0 10"/>
                 </Grid>
             </Border>
+            
+            <!--Top Menu-->
+            <Grid Grid.Column="1" Margin="25">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <!--Search TextBox-->
+                <Grid>
+                    <TextBlock Text="Search here..." Margin="45 0 20 0" VerticalAlignment="Center"
+                               Foreground="#9ea4ad" Panel.ZIndex="1" IsHitTestVisible="False"
+                               Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty,Converter={StaticResource boolToVis}}"/>
+
+                    <TextBox x:Name="textBox" Style="{StaticResource searchTextBox}"/>
+
+                    <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0"
+                                           HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+                
+                <!--Buttons-->
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="15 0 0 0">
+                    <Button Style="{StaticResource topMenuButton}">
+                        <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource topMenuButtonIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource topMenuButton}">
+                        <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource topMenuButtonIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource topMenuButton}" Background="#1e2e44">
+                        <Icon:PackIconMaterial Kind="Account" Style="{StaticResource topMenuButtonIcon}"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
         </Grid>
     </Border>
 </Window>
